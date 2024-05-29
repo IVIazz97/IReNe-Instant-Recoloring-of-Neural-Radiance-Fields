@@ -92,7 +92,7 @@
               <div class="publication-links">
                 <!-- PDF Link. -->
                 <span class="link-block">
-                  <a href="https://arxiv.org/pdf/2011.12948" class="external-link button is-normal is-rounded is-dark">
+                  <a href="" class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fas fa-file-pdf"></i>
                     </span>
@@ -100,7 +100,7 @@
                   </a>
                 </span>
                 <span class="link-block">
-                  <a href="https://arxiv.org/abs/2011.12948" class="external-link button is-normal is-rounded is-dark">
+                  <a href="" class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="ai ai-arxiv"></i>
                     </span>
@@ -109,7 +109,7 @@
                 </span>
                 <!-- Video Link. -->
                 <span class="link-block">
-                  <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
+                  <a href="https://www.youtube.com/watch?v=JA5trEVJtSE"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-youtube"></i>
@@ -120,7 +120,8 @@
                 <!-- Code Link. -->
                 <!-- Dataset Link. -->
                 <span class="link-block">
-                  <a href="" class="external-link button is-normal is-rounded is-dark">
+                  <a href="https://drive.google.com/drive/folders/12I6NTP4xHj6HzPWTllKrJUx_tqSbRlYa?usp=sharing"
+                    class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="far fa-images"></i>
                     </span>
@@ -156,31 +157,31 @@
             <h2 class="title is-3">Abstract</h2>
             <div class="content has-text-justified">
               <p>
-                Advances in NERFs have allowed for 3D scene recon
-                structions and novel view synthesis. Yet, efficiently edit-
-                ing these representations while retaining photorealism is
+                Advances in NERFs have allowed for 3D scene reconstructions and novel view synthesis.
+                Yet, efficiently editing
+                these representations while retaining photorealism is
                 an emerging challenge. Recent methods face three primary
                 limitations: they’re slow for interactive use, lack precision
-                at object boundaries, and struggle to ensure multi-view con-
-                sistency. We introduce IReNe to address these limitations,
-                enabling swift, near real-time color editing in NeRF. Lever-
-                aging a pre-trained NeRF model and a single training im-
-                age with user-applied color edits, IReNe swiftly adjusts net-
-                work parameters in seconds. This adjustment allows the
-                model to generate new scene views, accurately represent-
-                ing the color changes from the training image while also
-                controlling object boundaries and view-specific effects. Ob-
-                ject boundary control is achieved by integrating a trainable
-                segmentation module into the model. The process gains ef-
-                ficiency by retraining only the weights of the last network
-                layer. We observed that neurons in this layer can be classi-
-                fied into those responsible for view-dependent appearance
+                at object boundaries, and struggle to ensure multi-view consistency.
+                We introduce IReNe to address these limitations,
+                enabling swift, near real-time color editing in NeRF. Leveraging
+                a pre-trained NeRF model and a single training image
+                with user-applied color edits, IReNe swiftly adjusts
+                network parameters in seconds. This adjustment allows the
+                model to generate new scene views, accurately representing
+                the color changes from the training image while also
+                controlling object boundaries and view-specific effects. Object
+                boundary control is achieved by integrating a trainable
+                segmentation module into the model. The process gains efficiency
+                by retraining only the weights of the last network
+                layer. We observed that neurons in this layer can be classified
+                into those responsible for view-dependent appearance
                 and those contributing to diffuse appearance. We introduce
-                an automated classification approach to identify these neu-
-                ron types and exclusively fine-tune the weights of the diffuse
-                neurons. This further accelerates training and ensures con-
-                sistent color edits across different views. A thorough vali-
-                dation on a new dataset, with edited object colors, shows
+                an automated classification approach to identify these neuron
+                types and exclusively fine-tune the weights of the diffuse
+                neurons. This further accelerates training and ensures consistent
+                color edits across different views. A thorough validation
+                on a new dataset, with edited object colors, shows
                 significant quantitative and qualitative advancements over
                 competitors, accelerating speeds by 5x to 500x.
               </p>
