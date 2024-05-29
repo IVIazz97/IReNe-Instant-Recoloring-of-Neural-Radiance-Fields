@@ -156,31 +156,33 @@
             <h2 class="title is-3">Abstract</h2>
             <div class="content has-text-justified">
               <p>
-                We present the first method capable of photorealistically reconstructing a non-rigidly
-                deforming scene using photos/videos captured casually from mobile phones.
-              </p>
-              <p>
-                Our approach augments neural radiance fields
-                (NeRF) by optimizing an
-                additional continuous volumetric deformation field that warps each observed point into a
-                canonical 5D NeRF.
-                We observe that these NeRF-like deformation fields are prone to local minima, and
-                propose a coarse-to-fine optimization method for coordinate-based models that allows for
-                more robust optimization.
-                By adapting principles from geometry processing and physical simulation to NeRF-like
-                models, we propose an elastic regularization of the deformation field that further
-                improves robustness.
-              </p>
-              <p>
-                We show that <span class="dnerf">Nerfies</span> can turn casually captured selfie
-                photos/videos into deformable NeRF
-                models that allow for photorealistic renderings of the subject from arbitrary
-                viewpoints, which we dub <i>"nerfies"</i>. We evaluate our method by collecting data
-                using a
-                rig with two mobile phones that take time-synchronized photos, yielding train/validation
-                images of the same pose at different viewpoints. We show that our method faithfully
-                reconstructs non-rigidly deforming scenes and reproduces unseen views with high
-                fidelity.
+                Advances in NERFs have allowed for 3D scene recon
+                structions and novel view synthesis. Yet, efficiently edit-
+                ing these representations while retaining photorealism is
+                an emerging challenge. Recent methods face three primary
+                limitations: they’re slow for interactive use, lack precision
+                at object boundaries, and struggle to ensure multi-view con-
+                sistency. We introduce IReNe to address these limitations,
+                enabling swift, near real-time color editing in NeRF. Lever-
+                aging a pre-trained NeRF model and a single training im-
+                age with user-applied color edits, IReNe swiftly adjusts net-
+                work parameters in seconds. This adjustment allows the
+                model to generate new scene views, accurately represent-
+                ing the color changes from the training image while also
+                controlling object boundaries and view-specific effects. Ob-
+                ject boundary control is achieved by integrating a trainable
+                segmentation module into the model. The process gains ef-
+                ficiency by retraining only the weights of the last network
+                layer. We observed that neurons in this layer can be classi-
+                fied into those responsible for view-dependent appearance
+                and those contributing to diffuse appearance. We introduce
+                an automated classification approach to identify these neu-
+                ron types and exclusively fine-tune the weights of the diffuse
+                neurons. This further accelerates training and ensures con-
+                sistent color edits across different views. A thorough vali-
+                dation on a new dataset, with edited object colors, shows
+                significant quantitative and qualitative advancements over
+                competitors, accelerating speeds by 5x to 500x.
               </p>
             </div>
           </div>
