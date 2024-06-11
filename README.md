@@ -1,6 +1,5 @@
 # IReNe: Instant Recoloring of Neural Radiance Fields
-link to the project page https://iviazz97.github.io/IReNe-Instant-Recoloring-of-Neural-Radiance-Fields/
-
+link to the project page https://iviazz97.github.io/irene/
 Template taken from [Nerfies website](https://nerfies.github.io).
 
 # Website License
